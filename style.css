@@ -40,7 +40,7 @@ header ul li{
     cursor: pointer;
 }
 #logo{
-    background-image: url('logo.svg');
+    background-image: url('static/logo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -101,7 +101,6 @@ section{
     overflow: hidden;
     width: 100%;
     height: 100%;
-    background-color: #979;
 }
 #intro{
     display: flex;
@@ -111,7 +110,7 @@ section{
     justify-content: center;
     align-items: center;
     background-color: #535;
-    background-image: url('back.svg');
+    background-image: url('static/back.svg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -126,17 +125,18 @@ section{
 }
 #nike{
     transform: rotate(45deg);
-    background-image: url('intro.svg');
+    background-image: url('static/intro.svg');
 }
 #letter{
     display: block;
-    background-image: url('letter.svg');
+    background-image: url('static/letter.svg');
 }
 #produtos{
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: #979;
 }
 #produtos h2{
     text-align: center;
@@ -172,6 +172,20 @@ section{
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     border-radius: 20px;
+    background-position: center;
+    max-height: 250px;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.3);
+}
+#spacecards :nth-child(1){
+    background-image: url('static/adidas.webp');
+}
+#spacecards :nth-child(2){
+    background-image: url('static/under.webp');
+}
+#spacecards :nth-child(3){
+    background-image: url('static/olympikus.webp');
 }
 @media screen and (max-width:650px){
     #logo.click{
@@ -183,7 +197,7 @@ section{
     #intro #nike{
         width: 90%;
         transform: rotate(0);
-        background-image: url('intromobile.svg');
+        background-image: url('static/intromobile.svg');
     }
     #intro #letter{
         display: none;
