@@ -258,6 +258,18 @@ section{
 .text::before{
     content: '#';
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #757;
+}
+::-webkit-scrollbar-thumb {
+    background: #535;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #646;
+}
 @media screen and (max-width:650px){
     #logo.click{
         transform: translateX(-100%);
