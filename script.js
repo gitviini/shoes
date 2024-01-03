@@ -2,6 +2,11 @@ try{
     const menu = document.querySelector('#menu')
     const menubox = document.querySelector('#menubox')
     const list = ['intro','produtos','contatos']
+    const produtos = {
+        'mochila':[],
+        'tenis':[],
+        'camisetas':[]
+    }
 
     menu.addEventListener('click',()=>{
         document.querySelector('#logo').classList.toggle('click')
@@ -18,13 +23,6 @@ try{
         a.setAttribute('href',`#${list[n]}`)
         a.setAttribute('class','navigation')
         li.appendChild(a)
-        /*if (n == 0)
-            a.style.borderRadius = '50px 0 0 50px'
-        else if(n == list.length - 1)
-            a.style.borderRadius = '0 50px 50px 0'
-        else
-            a.style.borderRadius = '0'
-        */
     }
 
     window.addEventListener('scroll', ()=>{
