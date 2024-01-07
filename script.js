@@ -2,16 +2,12 @@ try{
     const menu = document.querySelector('#menu')
     const menubox = document.querySelector('#menubox')
     const list = ['intro','produtos','contatos']
-    const produtos = {
-        'mochila':[],
-        'tenis':[],
-        'camisetas':[]
-    }
 
     menu.addEventListener('click',()=>{
         document.querySelector('#logo').classList.toggle('click')
         menu.classList.toggle('click')
         menubox.classList.toggle('click')
+        document.querySelector('header').classList.toggle('click')
     })
 
 

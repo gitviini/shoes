@@ -120,6 +120,7 @@ header ul li{
 }
 .navigation{
     display: block;
+    font-family: monospace;
     text-decoration: none;
     text-align: center;
     padding: 20px 25px;
@@ -130,6 +131,35 @@ header ul li{
 }
 .navigation:hover{
     background-color: rgba(0,0,0,0.75);
+}
+#path{
+    display: flex;
+    width: calc(100% - 30px);
+    height: 50%;
+    margin: 60px 0;
+    flex-flow: column;
+    font-family: monospace;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#path ul{
+    overflow: hidden;
+}
+.label{
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 20px 35px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: center;
+}
+.item{
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 2px solid #000;
 }
 main{
     display: block;
